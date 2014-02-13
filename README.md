@@ -26,5 +26,5 @@ CLI:
 Plain Ruby:
 
 ```ruby
-result = result = ICAOCode.lookup("lufthansa") // => {"Lufthansa"=>"DLH", "Lufthansa Cargo"=>"GEC", "Lufthansa CityLine"=>"CLH", "Lufthansa Technik"=>"LHT"}
+ICAOCode.lookup("lufthansa") // => {"Lufthansa"=>"DLH", "Lufthansa Cargo"=>"GEC", "Lufthansa CityLine"=>"CLH", "Lufthansa Technik"=>"LHT"}
 ```
