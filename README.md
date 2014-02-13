@@ -21,11 +21,10 @@ CLI:
     Lufthansa: DLH
     Lufthansa Cargo: GEC
     Lufthansa CityLine: CLH
-    Lufthansa Systems: 
     Lufthansa Technik: LHT
     
 Plain Ruby:
 
 ```ruby
-result = result = ICAOCode.lookup("lufthansa") // => {"Lufthansa"=>"DLH", "Lufthansa Cargo"=>"GEC", "Lufthansa CityLine"=>"CLH", "Lufthansa Systems"=>"", "Lufthansa Technik"=>"LHT"}
+result = result = ICAOCode.lookup("lufthansa") // => {"Lufthansa"=>"DLH", "Lufthansa Cargo"=>"GEC", "Lufthansa CityLine"=>"CLH", "Lufthansa Technik"=>"LHT"}
 ```
