@@ -2,7 +2,7 @@ require "thor"
 
 module ICAOCode
   class CLI < Thor
-    desc "find TERM", "find ICAO code by search term"
+    desc "find TERM", "find ICAO codes by airline name"
     def find(name)
       result = ICAOCode.lookup(name)
 
