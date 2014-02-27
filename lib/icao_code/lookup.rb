@@ -7,7 +7,16 @@ module ICAOCode
         name      = row[1]
         icao_code = row[4]
 
-        memo[name] = icao_code if match?(name, query) && has_icao_code?(icao_code)
+        if has_icao_code?(icao_code)
+          by_code = !!(query =~ /[A-Z]{3}/)
+
+          if by_code
+            memo[name] = icao_code if query == icao_code
+            break memo if memo[name]
+          else
+            memo[name] = icao_code if match?(name, query)
+          end
+        end
         memo
       }
     end

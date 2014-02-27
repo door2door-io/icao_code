@@ -13,7 +13,7 @@ After cloning repository:
 
 ## Usage
 
-Search ICAO codes by given airline name.
+Search ICAO codes by given airline name (also partial) or code:
 
 CLI: 
 
@@ -22,6 +22,9 @@ CLI:
     Lufthansa Cargo: GEC
     Lufthansa CityLine: CLH
     Lufthansa Technik: LHT
+    
+    $ iata_code find DLH
+    Lufthansa: DLH
     
 Plain Ruby:
 
